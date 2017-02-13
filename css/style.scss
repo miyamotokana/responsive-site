@@ -1,0 +1,117 @@
+$fontcolor: #222;
+$btncolor: #555;
+
+@charset 'UTF-8';
+
+html,body{
+    font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-size:62.5%;
+    color:$fontcolor;
+}
+
+img{
+    width:100%;
+    max-height:500px;
+}
+
+p{
+    font-size:1.6rem;
+}
+
+main{
+    .content{
+        
+        max-width:1200px;
+        padding:0 5%;
+        margin:0 auto;
+        h2{
+            font-size:2.5rem;
+            font-weight:bold;
+            text-align: center;
+            margin:60px 0 50px 0;
+        	
+        }
+        .box{
+        	width: 30%;
+        	margin: 0 auto;
+        	float: left;
+        	margin-right: 3.333%;
+        	margin-bottom:70px;
+        	
+        	&:first-child{
+        		margin-right:0;
+        	}
+       	h3{
+        	   font-size:2rem; 
+        	   text-align:center;
+        	   font-weight:bold;
+        	   margin-bottom:10px;
+        	   color:#f45342;
+        	   
+        	}
+        	
+        }
+
+        
+    }
+    
+    
+    
+    
+    .more{
+    	clear: both;
+    	text-align: center;
+    	background:skyblue;
+    	padding:30px 0;
+    	position: absolute;
+    	bottom:0;
+    	width:100%;
+    	
+        p{
+            color:#fff;
+            font-weight:bold;
+            margin-bottom:20px;
+        }
+        a{
+        	text-decoration:none;
+        	font-size:1.6rem;
+        	color: #fff;
+        	display: block;
+        	padding: 15px 5%;
+        	background:$btncolor;
+        	width:30%;
+        	margin:0 auto;
+        	border-radius:5px;
+        	
+        	&:hover{
+        	    background:lighten($btncolor, 10%);
+        	}
+        }
+    }
+}
+
+@media screen and (max-width:786px){
+
+img{
+    max-height:250px;
+}
+main{
+    .content{
+        .box{
+        	width: 100%;
+        	display:block;
+        	float: none;
+        	margin-left: 0;
+        }
+
+        
+    }
+
+     .more{
+         position:static;
+        a{
+        	width:70%;
+        }
+    }
+}
+}
