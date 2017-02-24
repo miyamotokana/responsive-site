@@ -35,8 +35,14 @@ main .content {
       font-size: 2rem;
       text-align: center;
       font-weight: bold;
-      margin-bottom: 10px;
-      color: #f45342; }
+      padding: 10px 5%;
+      color: #27292d;
+      background: #b2f7ba; }
+    main .content .box p {
+      background: #406644;
+      color: #fff;
+      padding: 5%;
+      line-height: 1.6; }
 main .more {
   clear: both;
   text-align: center;
