@@ -23,12 +23,14 @@ main .content {
     font-weight: bold;
     text-align: center;
     margin: 60px 0 50px 0; }
+  main .content .content_box {
+    display: -webkit-flex;
+    justify-content: space-between;
+    margin-bottom: 70px; }
   main .content .box {
     width: 30%;
-    margin: 0 auto;
-    float: left;
-    margin-right: 3.333%;
-    margin-bottom: 70px; }
+    margin-bottom: 70px;
+    background: #406644; }
     main .content .box:first-child {
       margin-right: 0; }
     main .content .box h3 {
@@ -39,7 +41,6 @@ main .content {
       color: #27292d;
       background: #b2f7ba; }
     main .content .box p {
-      background: #406644;
       color: #fff;
       padding: 5%;
       line-height: 1.6; }
@@ -70,11 +71,10 @@ main .more {
   .kv {
     height: 250px; }
 
+  main .content .content_box {
+    flex-direction: column; }
   main .content .box {
-    width: 100%;
-    display: block;
-    float: none;
-    margin-left: 0; }
+    width: 100%; }
   main .more {
     position: static; }
     main .more a {
